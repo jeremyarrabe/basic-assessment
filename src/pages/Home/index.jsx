@@ -79,10 +79,14 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <SearchBar onSearch={handleSearchChange} value={searchQuery} />
-      <p className={styles.missionCount}>
-        {filteredMissions.length} mission{filteredMissions.length !== 1 ? 's' : ''}
-      </p>
+      <div style={{ position: 'sticky', top: 0, backgroundColor: '#f7f7f7' }}>
+        <h1>SpaceX Mission List</h1>
+        <SearchBar onSearch={handleSearchChange} value={searchQuery} />
+        <p className={styles.missionCount}>
+          Total mission{filteredMissions.length !== 1 ? `s: ${filteredMissions.length}` : ''}
+        </p>
+      </div>
+
       <div className={styles.cardContainer}>
         {filteredMissions.length === 0 ? (
           <p>No missions found.</p>
