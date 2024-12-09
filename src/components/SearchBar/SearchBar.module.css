@@ -1,0 +1,8 @@
+.searchContainer {
+  position: sticky;
+  top: 0;
+}
+.searchInput {
+  padding: 1rem 1rem;
+  width: 100%;
+}

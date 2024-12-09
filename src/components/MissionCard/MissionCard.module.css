@@ -1,0 +1,34 @@
+.card {
+  padding: 1rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.heading {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.viewBtn {
+  margin-top: 1rem;
+  background-color: #1362ff;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.cardBody {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
